@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div{
+        height: 10rem;
+        width: 10rem;
+        background-color: red;
+         animation: moveRight;
+         animation: movoLeft;
+         animation: moveUp;
+         animation: moveDown;
+        animation-duration: 6s;
+        animation-iteration-count: 5; 
+        /* animation-fill-mode: forwards; */
+        /* animation-delay: 1s;*/
+    } 
+     @keyframes moveRight { 
+         0%{
+            transform: translateX(0);
+        }
+        0%{
+            transform: translateX(100px);
+        }
+        100%{
+            transform: translateX(0);
+        } 
+     }
+    
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
